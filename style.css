@@ -15,6 +15,26 @@ body {
   overflow-x: hidden;
 }
 
+.left_arrow {
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  border-right:50px solid #DDD;
+  position: absolute;
+  left:calc(50% - 35% - 25px - 50px);
+  top:calc(350px - 50px);
+  cursor: pointer;
+}
+
+.right_arrow {
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  border-left:50px solid #DDD;
+  position: absolute;
+  left:calc(50% + 35% - 25px + 50px);
+  top:calc(350px - 50px);
+  cursor: pointer;
+}
+
 .code_container {
   margin: 10px 25px 5px 25px;
   display: inline-grid;

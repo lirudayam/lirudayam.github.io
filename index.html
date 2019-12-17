@@ -18,6 +18,21 @@
       processUnit();
     });
 
+    function navigateLeft() {
+      iUnit--;
+      if (iUnit < 0) {
+        iUnit = aUnits.length - 1;
+      }
+      oCurrentUnit = aUnits[iUnit];
+      processUnit();
+    }
+
+    function navigateRight() {
+      iUnit = (iUnit + 1) % aUnits.length;
+      oCurrentUnit = aUnits[iUnit];
+      processUnit();
+    }
+
     function processUnit() {
       // replace attributes
       $("#unit_title").html("Unit " + parseInt(iUnit + 1) + ": " + oCurrentUnit.name);
@@ -42,6 +57,7 @@
   </script>
 </head>
 <body>
+  <span class="left_arrow" onclick="navigateLeft()"></span>
   <div class="main_container">
     <h1 id="unit_title">Unit 1: Data Types</h1>
     <div class="code_container">
@@ -57,7 +73,7 @@
     <div class="content" id="content">
     </div>
   </div>
-
+  <span class="right_arrow" onclick="navigateRight()"></span>
   <footer>
     <p>Originally created by Leo Richard Irudayam</p>
   </footer>
