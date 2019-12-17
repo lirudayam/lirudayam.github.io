@@ -1,0 +1,3 @@
+var a = 16;                                     // Number
+var n = "Johnson";                              // String
+var x = {firstName:"John", lastName:"Doe"};     // Object

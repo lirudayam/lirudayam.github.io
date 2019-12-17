@@ -1,0 +1,13 @@
+# useful shorthand
+gender = 'F'
+long_gender = "male" if gender == 'M' else "female"
+output = "The candidate is a " + long_gender + " candidate"
+print(output)
+
+# replace by classic if
+age = 25
+appeared_on_tv = False
+output = "Candidate is not suitable"
+if gender == 'F' and appeared_on_tv and age > 23:
+    output = "Candidate is suitable"
+print(output)

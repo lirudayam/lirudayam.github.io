@@ -1,0 +1,13 @@
+// Simplified
+var fruit = "banana";
+var fruits = ["apple", "grape", "mango", "pineapple", "banana"];
+if (fruits.include(fruit)) {
+    console.log("Found!");
+}
+
+// check if number is dividable by 25, 17, 9 and 5
+// start with most restrictive, test by 5 is redudant because of 25
+var i = 2394859;
+if ((i % 25 === 0) && (i % 17 === 0) && (i % 9 === 0)) {
+    console.log("yes, it's good");
+}

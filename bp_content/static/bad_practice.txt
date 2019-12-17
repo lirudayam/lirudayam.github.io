@@ -1,0 +1,13 @@
+$api_key = 'XYZ-123';
+
+class Foo
+{
+    public function getTemperature() {
+        global $api_key;
+        $weather = curl(... $api_key);
+        return $weather;
+    }
+}
+
+$foo_ob = new Foo();
+echo $foo_ob -> getTemperature();

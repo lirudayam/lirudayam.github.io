@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Data Types",
+    "languageKey": "java",
+    "language": "Java",
+    "folder": "data_types"
+  },
+  {
+    "name": "Variable Naming",
+    "languageKey": "js",
+    "language": "JavaScript",
+    "folder": "var_names"
+  },
+  {
+    "name": "Constants",
+    "languageKey": "js",
+    "language": "JavaScript",
+    "folder": "const"
+  },
+  {
+    "name": "Variable Scopes",
+    "languageKey": "php",
+    "language": "PHP",
+    "folder": "var_scope"
+  },
+  {
+    "name": "Loops",
+    "languageKey": "php",
+    "language": "PHP",
+    "folder": "loops"
+  },
+  {
+    "name": "If Statements",
+    "languageKey": "js",
+    "language": "JavaScript",
+    "folder": "if"
+  },
+  {
+    "name": "Shorthand Ifs",
+    "languageKey": "py",
+    "language": "Python",
+    "folder": "if_short"
+  },
+  {
+    "name": "If-Elseif Structures",
+    "languageKey": "py",
+    "language": "Python",
+    "folder": "if_elseif"
+  },
+  {
+    "name": "Dictionaries / Associative Array",
+    "languageKey": "swift",
+    "language": "Swift",
+    "folder": "dict"
+  },
+  {
+    "name": "Static",
+    "languageKey": "php",
+    "language": "PHP",
+    "folder": "static"
+  },
+  {
+    "name": "Singleton Classes",
+    "languageKey": "kotlin",
+    "language": "Kotlin",
+    "folder": "singleton"
+  },
+  {
+    "name": "Method Chaining",
+    "languageKey": "php",
+    "language": "PHP",
+    "folder": "chaining"
+  }
+]

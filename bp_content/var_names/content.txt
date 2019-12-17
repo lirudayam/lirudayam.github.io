@@ -1,0 +1,12 @@
+It's very important to give variables an understandable name. They should be simple and easy to understand. Furthermore, your naming guidelines shall be continuously used.
+If you use camelCase, PascalCase or snake_case, make sure to stay consistent. Other programming languages (e.g. ABAP) require to define the variable scope with a leading char, such as 'g' for global or 'l' for local.<br /><br/>
+However, in typeless programming languages (e.g. JavaScript) it makes sense to define the intended data type by a leading char (even through this does not give the variable the intended data type):
+<ul>
+  <li>i for integer</li>
+  <li>b for boolean</li>
+  <li>s for string</li>
+  <li>o for object</li>
+  <li>...</li>
+</ul>
+<br />
+This is very important when you manipulate your variable or use it for operations or concatenations.

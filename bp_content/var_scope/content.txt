@@ -1,0 +1,5 @@
+The variable scope defines the validity of a variable. If you define it within a function, it is only valid within this function. These are the local variables. Global variables are valid throughout the entire code.
+This means also after a function has been executed and the return statements has been reached, local variables will be cleared so more resources are available.
+<br /><br />
+Make sure, which variables need to be stored globally and try to use more local variables. In some programming languages (e.g. PHP) it is necessary to define within a function which global variables you want to use. This means also you can modify a global variable within a local function. <br /><br />
+In the shown example, the code using local and global variables makes it easier to modify variables when certain conditions (limit) has been reached. Of course using local and global variables are by far more important in much bigger programs than this examples show.

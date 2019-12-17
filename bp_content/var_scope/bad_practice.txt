@@ -1,0 +1,22 @@
+$european_fruits = ["raspberry", "pear"];
+$tropical_fruits = ["mango", "banana"];
+$fruits_amounts = [];
+
+foreach ($european_fruits as $fruit) {
+    $fruits_amounts[$fruit] = rand(5, 10);
+}
+foreach ($tropical_fruits as $fruit) {
+    $fruits_amounts[$fruit] = rand(7, 10);
+}
+
+echo "There are " . (array_sum($fruits_amounts)) . " fruits (";
+$no_of_different_fruits = count($fruits_amounts);
+$i = 0;
+foreach ($fruits_amounts as $fruit => $amount) {
+    $i++;
+    echo $amount . " " . $fruit . "s";
+    if ($i < $no_of_different_fruits) {
+        echo ", ";
+    }
+}
+echo ")";

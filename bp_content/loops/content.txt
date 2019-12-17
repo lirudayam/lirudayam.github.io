@@ -1,0 +1,4 @@
+Loops are key for repeating processes. It's important to keep the logic in loops still readable, otherwise consider outsourcing some procedures to supporting methods or functions. But there are different loops and each serve different use cases.
+Although most have their favorite style of writing loops, it is sometimes more useful to consider also the other options of loops.
+<br /><br />
+For loops are designed to iterate through a given array or a fixed amount of iterations. The foreach loop is designed to handle associative array or dictionaries.  While loops are more optimized for condition based-looping. Do-While loops are same while loops but they do the condition check after each iteration.

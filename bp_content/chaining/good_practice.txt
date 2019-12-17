@@ -1,0 +1,27 @@
+class Person
+{
+    private $name;
+    private $age;
+
+    function __construct($name, $age) {
+        $this->name = $name;
+        $this->age = $age;
+    }
+
+    public function getOlder() {
+        $this->age++;
+        return $this;
+    }
+
+    public function marry($name, $replaceFlag) {
+        $this->name = $replaceFlag ? $name : ($this->name . "-" . $name);
+        return $this;
+    }
+
+    public function toString() {
+        return 'My Name is ' . $this->name . '! And I am ' . $this->age . ' years old!';
+    }
+}
+
+$person = new Person("Smith", 25);
+echo $person->getOlder()->marry("Chang", false)->toString();

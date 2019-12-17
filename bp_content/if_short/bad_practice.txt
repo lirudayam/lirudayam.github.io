@@ -1,0 +1,15 @@
+# too long code
+gender = 'F'
+output = "The candidate is"
+if gender == 'M':
+  output = output + " a male "
+else:
+  output = output + " a female "
+output = output + "candidate"
+print(output)
+
+# too long shorthand
+age = 25
+appeared_on_tv = False
+output = "Candidate is suitable" if (gender == 'F' and age > 23 and appeared_on_tv) else "Candidate is not suitable"
+print(output)

@@ -1,0 +1,8 @@
+# using dict
+gender = 'F'
+gender_mapping = {
+    "M": "male",
+    "F": "female",
+    "D": "diverse"
+}
+print(gender_mapping.get(gender, "Invalid"))  # easy reusability

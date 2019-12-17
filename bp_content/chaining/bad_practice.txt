@@ -1,0 +1,29 @@
+class Person
+{
+    public $name;
+    private $age;
+
+    function __construct($name, $age) {
+        $this->name = $name;
+        $this->age = $age;
+    }
+
+    public function getOlder() {
+        $this->age++;
+    }
+
+    public function toString() {
+        return 'My Name is ' . $this->name . '! And I am ' . $this->age . ' years old!';
+    }
+}
+
+$person = new Person("Smith", 25);
+$person->getOlder();
+$replace_surname = true;
+if ($replace_surname) {
+  $person->name = "Chang";
+}
+else {
+  $person->name .= "-Chang";
+}
+echo $person->toString();

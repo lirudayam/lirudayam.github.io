@@ -1,0 +1,8 @@
+Enhancing the idea of static attributes and so on, singleton classes are very useful when you want to ensure only one object of a class is been used. You may ask yourself why this shall be useful, but there are many useful cases:
+<ul>
+  <li>controls concurrent access to a shared resource (e.g. database access, configuration, ...)</li>
+  <li>logging</li>
+  <li>when there can be only one object</li>
+</ul>
+
+Usually, you'd create a private static variable init null. You create a public static getInstance() method returning the private static variable. If it is null, it shall first create an object and save into the variable. Kotlin is even easier and allows doing this via "object".

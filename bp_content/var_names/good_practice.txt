@@ -1,0 +1,3 @@
+var iAge = 16;                                    // Number
+var sName = "Johnson";                            // String
+var oNames = {firstName:"John", lastName:"Doe"};  // Object

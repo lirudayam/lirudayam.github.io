@@ -1,0 +1,7 @@
+const PI = 3.141592653589793;
+var fRadius = fPerimeter / (2 * PI)
+
+const ITERATIONS = 100;
+for (var i = 0; i < ITERATIONS; i++) {
+  console.log(i);
+}

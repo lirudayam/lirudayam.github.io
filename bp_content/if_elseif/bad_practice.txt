@@ -1,0 +1,9 @@
+# too long
+gender = 'F'
+if gender == 'M':
+  long_gender = "male"
+elif gender == 'F':
+  long_gender = "female"
+else:
+  long_gender = "diverse"
+print(long_gender)

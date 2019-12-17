@@ -1,0 +1,22 @@
+$total_no_of_fruits = 0;
+$european_fruits = ["raspberry", "pear"];
+$tropical_fruits = ["mango", "banana"];
+$fruits_output_array = [];
+define("LIMIT", 30); // maximum 30 fruits
+
+// returns number of fruits added
+function add_fruit($fruit, $min, $max)
+{
+    global $total_no_of_fruits, $fruits_output_array;
+    $random_number = rand($min, $max);
+    if ($total_no_of_fruits + $random_number > LIMIT) {
+        $random_number = LIMIT - $total_no_of_fruits;
+    }
+    $fruits_output_array[] = $random_number . " " . $fruit . "s";
+    $total_no_of_fruits += $random_number;
+}
+
+foreach ($european_fruits as $fruit) add_fruit($fruit, 5, 10);
+foreach ($tropical_fruits as $fruit) add_fruit($fruit, 7, 10);
+
+echo "There are " . $total_no_of_fruits . " fruits (" . implode(", ", $fruits_output_array) . ")";

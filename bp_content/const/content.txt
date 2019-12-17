@@ -1,0 +1,4 @@
+In comparison to variables, constants shall be used for maintaining a single source of truth of a value within the code. Usually they are not editable. It's common practice to write constants in CAPSLOCK.
+Understanding that not every stored peace of data is done for modification, you can avoid errors during runtime. They enhance the idea of read-only data.
+<br /><br />
+Mostly these are been defined using keywords like e.g. "const" or "final". It may still be necessary to define the data type of constant.

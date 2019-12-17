@@ -1,0 +1,9 @@
+public class MyTestClass {
+  public static void main(String[] args) {
+    int myIndex = 1;             // integer (whole number)
+    float myPercentage = 0.34f;  // floating point number
+    char myGender = 'M';         // character
+    boolean billsPaid = true;    // boolean
+    String myName = "Leo";       // String
+  }
+}

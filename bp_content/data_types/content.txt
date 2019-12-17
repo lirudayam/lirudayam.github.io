@@ -1,0 +1,4 @@
+Most languages require to give a variable at the initialization a data type. This is important for the program to reserve resources when this variable is been declared later.
+So it's important to be clear which data type this variable shall use. <b>Keep it simple</b>, give indexes just integers or flags just the boolean type. If it is a more complex data structure consider using dictionaries or classes.<br /><br />
+Nonetheless, there are many typeless programming languages. Be aware of the consequences when using them especially for comparison operations.
+PHP 7.4 has introduces typed properties. Whenever it appears useful to outline the data type, do so!

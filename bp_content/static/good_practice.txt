@@ -1,0 +1,12 @@
+class Foo
+{
+    private static $api_key = 'XYZ-123';
+
+    public function getTemperature() {
+        $weather = curl(... self::$my_static);
+        return $weather;
+    }
+}
+
+$foo_ob = new Foo();
+echo $foo_ob -> getTemperature();

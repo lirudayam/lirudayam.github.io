@@ -1,0 +1,13 @@
+object SingletonClass {
+    init {
+        println("init.")
+    }
+    val userLanguage = "en"
+    fun getLanguage(){
+        println(userLanguage)
+    }
+}
+
+fun main(args: Array<String>) {
+    SingletonClass.getLanguage()
+}

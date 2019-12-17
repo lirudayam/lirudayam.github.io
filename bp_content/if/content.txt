@@ -1,0 +1,10 @@
+If statements appear to be such an easy thing but there are a many troubleshooting things developers don't care about. Mostly because the code does still work, but there are a few tips: <br />
+<ul>
+  <li>Avoid using === true or === false, just leave it away or use !</li>
+  <li>Avoid using long chains of method calls, you could end up somewhere in between with null</li>
+  <li>When you use "&&" or "||", group the statement and encapsulate it in brackets (it's easier to read)</li>
+  <li>Avoid building to long if statements, split them in multiple ifs</li>
+  <li><b>When combining and-conditions, start with most restrictive one</b> (if it fails, it won't check the rest)</li>
+  <li>Comment only when the condition is complicated, don't comment a "if (i < 4)". It's just unnecessary</li>
+  <li>Take care of comparison types as well. Don't forget the data types. Triple equals are much safer and more performant.</li>
+</ul>

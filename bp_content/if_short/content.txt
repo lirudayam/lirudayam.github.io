@@ -1,0 +1,4 @@
+Sometimes if-else statements are super easy. Maybe it's needed to check for a boolean value or if a string matches another one. Nevertheless, writing an entire if statement is not wrong but is just sometimes too long. Shorthand-if is the answer.
+But pay attention. They are really designed for <b>very simple</b> ifs. They don't replace entire logic. It gets very unreadable, if you use more then one condition.
+<br /><br />
+Shorthand can be in a format "&lt;condition> ? &lt;true_value> : &lt;false_value>" or like in the example shown "&lt;true_declaration> if &lt;condition> else &lt;else_value>"

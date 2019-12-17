@@ -1,0 +1,9 @@
+public class MyTestClass {
+  public static void main(String[] args) {
+    float myIndex = 1f;
+    double myPercentage = 0.3400000;
+    String myGender = 'M';
+    String billsPaid = 'yes';
+    char[] myName = {'L', 'e', 'o'};
+  }
+}

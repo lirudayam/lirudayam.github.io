@@ -1,0 +1,10 @@
+var fPI = 3.141592653589793;            // can be manipulated
+var fRadius = fPerimeter / (2 * fPI)
+
+var iIterations = 100;
+for (var i = 0; i < iIterations; i++) {
+  console.log(i);
+  if (i === 25) {
+    iIterations = 200;                  // no good programming style
+  }
+}

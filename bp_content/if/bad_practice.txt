@@ -1,0 +1,12 @@
+// Too many statements
+var fruit = "banana";
+if (fruit === "apple" || fruit === "grape" || fruit === "mango" || fruit === "pineapple" || fruit === "banana") {
+    console.log("Found!");
+}
+
+// bad because order of conditions
+// check if number is dividable by 25, 17, 9 and 4
+var i = 2394859;
+if (i % 4 === 0 && i % 9 === 0 && i % 17 === 0 && i % 25 === 0) {
+    console.log("yes, it's good");
+}

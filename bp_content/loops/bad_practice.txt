@@ -1,0 +1,29 @@
+$i = 0;
+do {
+    echo $i . "\n";
+    $i++;
+} while($i < 10);
+
+$fruits = ["mangos" => 5, "bananas" => 6, "grapes" => 4];
+while (list($fruit, $amount) = each($fruits)) {
+    echo $amount . " " . $fruit . "\n";
+}
+
+$annual_interest_rate = 1.05;
+$interest_rate = 1;
+for ($i = 0; $i < 200; $i ++) {
+    $interest_rate *= $annual_interest_rate;
+    echo "Now, I have " . $interest_rate . "x the money.\n";
+    if ($interest_rate >= 1.2) {
+        break;
+    }
+}
+
+echo "\n I wait another year, I want more then 20%.\n";
+for ($i = 0; $i < 200; $i ++) {
+    $interest_rate *= $annual_interest_rate;
+    echo "I had already more than 20%, but now it's " . ($interest_rate * 100 - 100) . "%";
+    if ($interest_rate >= 1.2) {
+        break;
+    }
+}

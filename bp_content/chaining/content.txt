@@ -1,0 +1,2 @@
+Chaining got popular with the introduction of jQuery. Nevertheless, it is not only limited to JavaScript. Chaining means simply to build a chain of method calls without the need to store the result in a variable or to go line by line approach.
+You should watch out not to get lost in chains, but sometimes it can be useful, especially when you need more logic than you can serve at the constructor level and you want to manipulate your object in many different ways.

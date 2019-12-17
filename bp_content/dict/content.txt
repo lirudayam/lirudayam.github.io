@@ -1,0 +1,2 @@
+Dictionaries or associative arrays are the perfect way to store data structured when they don't need to deliver out-of-the-box logic. If you need logic like calculation or so, maybe consider using a class and create objects. If you need to just store plain data, use these dictionaries.
+Avoid using arrays with integer keys, because it makes your code less intuitive and others need to first understand which index has which meaning.

@@ -1,0 +1,5 @@
+Often developers only work with if, if-else, if-elseif structures. But sometimes it's useful to use also different structures. <br /><br />
+If you have different conditions, use if-elseif with the least restrictive to begin (but watch out of the order of logic).<br />
+If you compare different values to the same variable, use switch or consider dictionaries.<br />
+If your multiple else structure contain the same code, consider outsourcing into a function or using "goto" declarations.<br /><br />
+Watch out: If you use more then 1x time the same logical structure, directly outsource it into a function/method.

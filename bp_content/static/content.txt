@@ -1,0 +1,2 @@
+Static variables are very useful when you need a global variable associated to a class, beyond files. Public static classes, methods or variables can be used a non-persistent data storage across different files/classes. Private static attributes can be used for keeping data for each object of a class.
+Sometimes static is pretty useful, so avoid storing too much in global variables.

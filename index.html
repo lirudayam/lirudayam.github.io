@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <title>Best Practices Coding</title>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?autoload=true&amp;skin=sunburst&amp;lang=css" defer=""></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/src/lang-swift.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/src/lang-kotlin.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet" />
+  <script defer="defer">
+    var iUnit = 11;
+    var aUnits = null, oCurrentUnit = {};
+    $.getJSON("bp_content/units.json", function(json) {
+      aUnits = json;
+      oCurrentUnit = aUnits[iUnit];
+      processUnit();
+    });
+
+    function processUnit() {
+      // replace attributes
+      $("#unit_title").html("Unit " + parseInt(iUnit + 1) + ": " + oCurrentUnit.name);
+      $(".lng").text(oCurrentUnit.language);
+
+      // get unit specific content
+      $.get("bp_content/" + oCurrentUnit.folder + "/content.txt", function(data) {
+         $("#content").html(data)
+      }, 'text');
+
+      $.get("bp_content/" + oCurrentUnit.folder + "/bad_practice.txt", function(data) {
+        console.log(oCurrentUnit.languageKey);
+         $("#bad_code").html(PR.prettyPrintOne(data, oCurrentUnit.languageKey));
+         $("#bad_code").attr("class", "prettyprint linenums:1 lang-" + oCurrentUnit.languageKey + " prettyprinted");
+      }, 'text');
+
+      $.get("bp_content/" + oCurrentUnit.folder + "/good_practice.txt", function(data) {
+         $("#good_code").html(PR.prettyPrintOne(data, oCurrentUnit.languageKey));
+         $("#good_ocde").attr("class", "prettyprint linenums:1 lang-" + oCurrentUnit.languageKey + " prettyprinted");
+      }, 'text');
+    }
+  </script>
+</head>
+<body>
+  <div class="main_container">
+    <h1 id="unit_title">Unit 1: Data Types</h1>
+    <div class="code_container">
+      <div class="code_block">
+        <pre class="prettyprint" id="bad_code"></pre>
+        <span>Bad practice (using <span class="lng"></span>)</span>
+      </div>
+      <div class="code_block">
+        <pre class="prettyprint" id="good_code"></pre>
+        <span>Good practice (using <span class="lng"></span>)</span>
+      </div>
+    </div>
+    <div class="content" id="content">
+    </div>
+  </div>
+
+  <footer>
+    <p>Originally created by Leo Richard Irudayam</p>
+  </footer>
+</body>
+</html>
