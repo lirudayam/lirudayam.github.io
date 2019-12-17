@@ -1,0 +1,2 @@
+SQL Injection is a serious matter. It can not only allow attackers to login without any credentials but even delete your entire database. Be prepared and be ware of user inputs when you add them to your SQL statement. Avoid allowing any entry of quotes.
+It's better to use programming language specific function for query building which have integrated a SQL protection.

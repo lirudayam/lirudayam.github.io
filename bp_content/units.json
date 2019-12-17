@@ -82,5 +82,11 @@
     "languageKey": "js",
     "language": "JavaScript",
     "folder": "parameters"
+  },
+  {
+    "name": "SQL Injection",
+    "languageKey": "php",
+    "language": "PHP",
+    "folder": "sql_injection"
   }
 ]

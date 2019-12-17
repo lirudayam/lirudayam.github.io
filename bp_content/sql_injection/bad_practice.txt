@@ -1,0 +1,8 @@
+$sql = "INSERT INTO Customers (CustomerName,Address,City)
+VALUES ('".$_POST['name']."', '".$_POST['addr']."', '".$_POST['city']."')";
+
+if ($conn->query($sql)) {
+    echo "New record created successfully";
+} else {
+    echo "Error: " . $sql . "<br>" . $conn->error;
+}
