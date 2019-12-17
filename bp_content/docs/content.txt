@@ -1,0 +1,2 @@
+Commenting is very important for collaboration and maintenance of code. There a variety of tools that support for commenting classes and methods. They follow a metadata approach with different components like explaining the meaning of parameters, the logic and return values as well as possible exceptions.
+These documentation can be auto-read by most IDEs and can support programmers when using this class or method.

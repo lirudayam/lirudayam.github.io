@@ -1,0 +1,4 @@
+// set name
+public void setName(String newName) {
+  name = newName;
+}

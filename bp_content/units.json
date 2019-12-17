@@ -88,5 +88,11 @@
     "languageKey": "php",
     "language": "PHP",
     "folder": "sql_injection"
+  },
+  {
+    "name": "Auto-documentation",
+    "languageKey": "java",
+    "language": "Java",
+    "folder": "docs"
   }
 ]

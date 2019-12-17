@@ -1,0 +1,7 @@
+/**
+ * Changes the name of this Person.
+ * @param newName This Persons's new first and last name.
+ */
+public void setName(String newName) {
+  name = newName;
+}
