@@ -2,12 +2,14 @@
 <html lang="en-US">
 <head>
   <meta charset="UTF-8">
-  <title>Best Practices Coding</title>
+  <title>the open Experience</title>
   <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?autoload=true&amp;skin=sunburst&amp;lang=css" defer=""></script>
   <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/src/lang-swift.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/src/lang-kotlin.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="the_open_experience_favicon.png" sizes="96x96">
+
   <link href="style.css" rel="stylesheet" />
   <script defer="defer">
     var iUnit = 0;
@@ -19,29 +21,43 @@
         $('#dropdown_container').append("<div class=\"item\" onclick=\"navigate('" + i + "')\">Unit " + parseInt(i + 1) + ": " + val.name + "</div>");
       });
 
-      oCurrentUnit = aUnits[iUnit];
-      processUnit();
+
+      $(document).ready(function(){
+          var theHash = window.location.hash;
+          theHash = theHash.substr(1);
+          if (theHash !== "") {
+            navigate(aUnits.findIndex(x => x.folder === theHash));
+          }
+          else {
+            goTo();
+          }
+      });
     });
+
+
 
     function navigateLeft() {
       iUnit--;
       if (iUnit < 0) {
         iUnit = aUnits.length - 1;
       }
-      oCurrentUnit = aUnits[iUnit];
-      processUnit();
+      goTo();
     }
 
     function navigateRight() {
       iUnit = (iUnit + 1) % aUnits.length;
-      oCurrentUnit = aUnits[iUnit];
-      processUnit();
+      goTo();
     }
 
     function navigate(i) {
       iUnit = Math.abs(i) % aUnits.length;
+      goTo();
+    }
+
+    function goTo() {
       oCurrentUnit = aUnits[iUnit];
       processUnit();
+      window.location.hash = "#" + oCurrentUnit.folder;
     }
 
     function processUnit() {
@@ -55,7 +71,6 @@
       }, 'text');
 
       $.get("bp_content/" + oCurrentUnit.folder + "/bad_practice.txt", function(data) {
-        console.log(oCurrentUnit.languageKey);
          $("#bad_code").html(PR.prettyPrintOne(data, oCurrentUnit.languageKey));
          $("#bad_code").attr("class", "prettyprint linenums:1 lang-" + oCurrentUnit.languageKey + " prettyprinted");
       }, 'text');

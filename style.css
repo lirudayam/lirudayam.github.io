@@ -1,6 +1,10 @@
 body {
   font-family: 'PT Sans', sans-serif;
   background-color: #F1F1F1;
+  background-image: url(the_open_experience.png);
+  background-repeat: no-repeat;
+  background-position: 15px 15px;
+  background-size: 220px;
 }
 
 .dropdown {
