@@ -1,0 +1,10 @@
+It seams super easy to understand that parameters can be passed to a function or method. But often it gets messy and confusing when lots of parameters are been passed.
+Consider following:
+<ul>
+  <li>Give default values to parameters</li>
+  <li>Keep similar approach of order of parameters, such as (name, attribute)</li>
+  <li>Replace many parameters by passing an object or a dictionary</li>
+  <li>Do not pass unnecessary variables, e.g. globally accessible variables, etc.</li>
+  <li>Think of introducing a simple method/function, which calls your original method/function with more parameters</li>
+  <li>Reduce complexity of function, if you request that many parameters</li>
+</ul>

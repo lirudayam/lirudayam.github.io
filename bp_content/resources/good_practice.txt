@@ -1,0 +1,12 @@
+$arr1 = [];
+for ($i = 0; $i < 10000; $i++) {
+  $arr1[] = 2 * $i;
+}
+print(implode(", ", $arr1));
+unset($arr1);
+
+$arr2 = [];
+for ($i = 0; $i < 10000; $i++) {
+  $arr2[] = 3 * $i;
+}
+print(implode(", ", $arr2));

@@ -10,10 +10,15 @@
   <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
   <link href="style.css" rel="stylesheet" />
   <script defer="defer">
-    var iUnit = 11;
+    var iUnit = 0;
     var aUnits = null, oCurrentUnit = {};
     $.getJSON("bp_content/units.json", function(json) {
       aUnits = json;
+
+      $.map(aUnits, function( val, i ) {
+        $('#dropdown_container').append("<div class=\"item\" onclick=\"navigate('" + parseInt(i + 1) + "')\">Unit " + i + ": " + val.name + "</div>");
+      });
+
       oCurrentUnit = aUnits[iUnit];
       processUnit();
     });
@@ -29,6 +34,12 @@
 
     function navigateRight() {
       iUnit = (iUnit + 1) % aUnits.length;
+      oCurrentUnit = aUnits[iUnit];
+      processUnit();
+    }
+
+    function navigate(i) {
+      iUnit = Math.abs(i) % aUnits.length;
       oCurrentUnit = aUnits[iUnit];
       processUnit();
     }
@@ -57,6 +68,12 @@
   </script>
 </head>
 <body>
+  <div class="dropdown">
+    <span>Menu</span>
+    <div class="dropdown-content" id="dropdown_container">
+    </div>
+  </div>
+
   <span class="left_arrow" onclick="navigateLeft()"></span>
   <div class="main_container">
     <h1 id="unit_title">Unit 1: Data Types</h1>

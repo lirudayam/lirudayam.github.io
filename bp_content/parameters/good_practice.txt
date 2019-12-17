@@ -1,0 +1,11 @@
+function add() {
+  var sum = 0;
+  for (i = 0; i < arguments.length; i++) sum += arguments[i];
+  return sum;
+}
+var iNum = add(1, 2, 3);
+
+function describePerson(oPerson) {
+  return oPerson.firstName + " " + oPerson.surName + " is " + oPerson.age + " years old and" + (oPerson.married ? "" : " not") + " married.";
+}
+console.log(describePerson({firstName: "John", surName: "Doe", age: 21, married: false}));

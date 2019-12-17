@@ -1,12 +1,12 @@
 [
   {
-    "name": "Data Types",
+    "name": "Data types",
     "languageKey": "java",
     "language": "Java",
     "folder": "data_types"
   },
   {
-    "name": "Variable Naming",
+    "name": "Variable naming",
     "languageKey": "js",
     "language": "JavaScript",
     "folder": "var_names"
@@ -18,7 +18,7 @@
     "folder": "const"
   },
   {
-    "name": "Variable Scopes",
+    "name": "Variable scopes",
     "languageKey": "php",
     "language": "PHP",
     "folder": "var_scope"
@@ -30,19 +30,19 @@
     "folder": "loops"
   },
   {
-    "name": "If Statements",
+    "name": "If statements",
     "languageKey": "js",
     "language": "JavaScript",
     "folder": "if"
   },
   {
-    "name": "Shorthand Ifs",
+    "name": "Shorthand ifs",
     "languageKey": "py",
     "language": "Python",
     "folder": "if_short"
   },
   {
-    "name": "If-Elseif Structures",
+    "name": "If-Elseif structures",
     "languageKey": "py",
     "language": "Python",
     "folder": "if_elseif"
@@ -60,15 +60,27 @@
     "folder": "static"
   },
   {
-    "name": "Singleton Classes",
+    "name": "Singleton classes",
     "languageKey": "kotlin",
     "language": "Kotlin",
     "folder": "singleton"
   },
   {
-    "name": "Method Chaining",
+    "name": "Method chaining",
     "languageKey": "php",
     "language": "PHP",
     "folder": "chaining"
+  },
+  {
+    "name": "Clearing resources",
+    "languageKey": "php",
+    "language": "PHP",
+    "folder": "resources"
+  },
+  {
+    "name": "Function parameters",
+    "languageKey": "js",
+    "language": "JavaScript",
+    "folder": "parameters"
   }
 ]

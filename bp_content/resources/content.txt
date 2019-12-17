@@ -1,0 +1,3 @@
+When writing a program that saves lots of data for processing, it's important to free this resources when they are not anymore needed till the end of the project. Garbage Collectors usually kick in but in interpreter languages this is not working very good.
+Data from local variables will be deleted after the function has returned to the main stack but it could still be that you have a array with dozens of entires or so, you don't need anymore.
+Consider unsetting this or setting to null.

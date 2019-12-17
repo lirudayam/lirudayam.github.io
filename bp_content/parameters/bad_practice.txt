@@ -1,0 +1,9 @@
+function add(var1, var2, var3 = 0, var4 = 0, var5 = 0) {
+  return var1 + var2 + var3 + var4 + var5;
+}
+var iNum = add(1, 2, 3);
+
+function describePerson(firstName, surName, age, married=false) {
+  return firstName + " " + surName + " is " + age + " years old and" + (married ? "" : " not") + " married.";
+}
+console.log(describePerson("John", "Doe", 21, false));
