@@ -16,7 +16,7 @@
       aUnits = json;
 
       $.map(aUnits, function( val, i ) {
-        $('#dropdown_container').append("<div class=\"item\" onclick=\"navigate('" + parseInt(i + 1) + "')\">Unit " + i + ": " + val.name + "</div>");
+        $('#dropdown_container').append("<div class=\"item\" onclick=\"navigate('" + i + "')\">Unit " + parseInt(i + 1) + ": " + val.name + "</div>");
       });
 
       oCurrentUnit = aUnits[iUnit];
